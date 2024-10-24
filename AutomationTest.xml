@@ -3,7 +3,7 @@
 <suite name="E commerce App" verbose="1" thread-count="1" >
     <listeners>
         <listener class-name="utils.listeners.TestListener"/>
-        <listener class-name="utils.listeners.AnnotationTransformer"/>
+        <listener class-name="utils.listeners.AnnotationTransformer"/>/
     </listeners>
     <test  name="chrome Test">
 <!--        <parameter name="browser" value="chrome"/>-->

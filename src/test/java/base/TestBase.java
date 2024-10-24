@@ -1,7 +1,13 @@
 package base;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,9 +21,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 import utils.ReadTestData;
 
 import java.io.File;
@@ -33,6 +37,22 @@ public class TestBase {
     public static String baseUrl = readTestData.setApplicationURL();
     public static WebDriver driver;
     public static JavascriptExecutor jsExecutor;
+    protected static final Logger logger = LogManager.getLogger(TestBase.class);
+    protected static ExtentReports extentReports;
+    protected static ExtentTest extentTest;
+
+//    @BeforeSuite
+//    public void setupExtentReports() {
+//        ExtentSparkReporter sparkReporter = new ExtentSparkReporter("reports/API_Test_Report.html");
+//        sparkReporter.config().setTheme(Theme.DARK);
+//        sparkReporter.config().setDocumentTitle("Fakerest API Test Report");
+//        sparkReporter.config().setReportName("API Automation Test Results");
+//        extentReports = new ExtentReports();
+//        extentReports.attachReporter(sparkReporter);
+//        extentReports.setSystemInfo("Tester", "Ekemini Udoh");
+//        extentReports.setSystemInfo("Project", "Fakerest API Automation");
+//    }
+
 
     // Method to capture a screenshot
     public static void captureScreen(WebDriver driver, String testName) throws IOException {
@@ -86,4 +106,9 @@ public class TestBase {
             driver.quit();
         }
     }
+
+//    @AfterSuite
+//    public void tearDownExtentReports() {
+//        extentReports.flush();
+//    }
 }

@@ -21,25 +21,25 @@ public class PageBase {
     }
 
     // Wait until the element is visible
-    protected WebElement waitForVisibility(WebElement element) {
+    public WebElement waitForVisibility(WebElement element) {
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
     // Wait until the element is clickable
-    protected WebElement waitForElementToBeClickable(WebElement element) {
+    public WebElement waitForElementToBeClickable(WebElement element) {
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    protected void click(WebElement element) {
+    public void click(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
     }
 
-    protected void enterText(WebElement element, String text) {
+    public void enterText(WebElement element, String text) {
         wait.until(ExpectedConditions.visibilityOf(element)).clear();
         element.sendKeys(text);
     }
 
-    protected String getText(WebElement element) {
+    public String getText(WebElement element) {
         return wait.until(ExpectedConditions.visibilityOf(element)).getText();
     }
 }

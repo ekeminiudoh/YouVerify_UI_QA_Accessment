@@ -7,11 +7,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProductPage extends PageBase {
 
-    @FindBy(xpath = "//*[@id=\"entry_216842\"]/button")
-    private WebElement addToCartBtn;
+    @FindBy(xpath = "/html/body/div[1]/div[9]/div[1]/div[2]/div/div[2]/div[2]/div[10]/div/div[4]/div/div[2]/button")
+    protected WebElement addToCartBtn;
 
-    @FindBy(xpath = "//*[@id=\"entry_217825\"]/a/div[1]/div/svg/use")
-    private WebElement cartBtn;
+    @FindBy(xpath = "/html/body/div[2]/div/div[2]/div[2]/div[1]/a")
+    protected WebElement cartBtn;
 
     public ProductPage(WebDriver driver) {
         super(driver);
@@ -22,6 +22,7 @@ public class ProductPage extends PageBase {
     }
 
     public void viewCart(){
+        waitForVisibility(cartBtn);
         click(cartBtn);
     }
 }

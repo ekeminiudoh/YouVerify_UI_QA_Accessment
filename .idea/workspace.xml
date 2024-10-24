@@ -5,28 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e875f3cd-2b0d-45ef-9983-0914d31211c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AutomationTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/PageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LandingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SearchResultsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestCases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/ReadTestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/extentReports/ExtentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/extentReports/ExtentTestManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/listeners/AnnotationTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/listeners/Retry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/listeners/TestListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testData.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci-pipeline.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutomationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AutomationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestCases.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,22 +51,37 @@
     "TestNG.TestCases.TC_01.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mac/IdeaProjects/YouVerfify_QA_Accessment",
+    "last_opened_file_path": "/Users/mac/IdeaProjects/YouVerfify_QA_Accessment/src/test",
     "onboarding.tips.debug.path": "/Users/mac/IdeaProjects/YouVerfify_QA_Accessment/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/.github/workflows" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG./Users/mac/IdeaProjects/YouVerfify_QA_Accessment/AutomationTest.xml">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="YouVerfify_UI_QA_Accessment" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="YouVerfify_UI_QA_Accessment" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestCases.TC_01" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouVerfify_QA_Accessment" />
+      <module name="YouVerfify_UI_QA_Accessment" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -93,7 +99,7 @@
       </method>
     </configuration>
     <configuration name="/Users/mac/IdeaProjects/YouVerfify_QA_Accessment/AutomationTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouVerfify_QA_Accessment" />
+      <module name="YouVerfify_UI_QA_Accessment" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/AutomationTest.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
@@ -119,6 +125,13 @@
       <updated>1729712804780</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -10,8 +10,8 @@ import java.util.List;
 
 public class SearchResultsPage extends PageBase {
 
-    @FindBy(className = "entry-content content-products order-4 order-md-3")
-    private List<WebElement> results;
+    @FindBy(className = "text-ellipsis-2")
+    protected List<WebElement> results;
 
     public SearchResultsPage(WebDriver driver) {
         super(driver);
@@ -19,8 +19,7 @@ public class SearchResultsPage extends PageBase {
 
 
     public boolean searchResults(String expectedName){
-        boolean nameFound = results.stream().map(WebElement::getText).anyMatch(text -> text.contains(expectedName));
-        return nameFound;
+        return results.stream().map(WebElement::getText).anyMatch(text -> text.contains(expectedName));
     }
 
     public void clickResultByIndex(int index) {
