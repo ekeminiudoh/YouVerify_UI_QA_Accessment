@@ -43,7 +43,7 @@ public class ReadTestData {
     }
 
     public String setBrowser() { // ok - add new url in config.properties
-        String browser=pro.getProperty("browser");
+        String browser =pro.getProperty("browser");
         return browser;
     }
 }

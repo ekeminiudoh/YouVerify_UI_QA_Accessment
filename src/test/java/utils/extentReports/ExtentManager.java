@@ -17,12 +17,11 @@ public class ExtentManager {
     }
     public synchronized static ExtentReports createExtentReports() {
         String currentDate = localDate();
-        ExtentSparkReporter reporter = new ExtentSparkReporter("./Reports/Rick and Morty-Report" + currentDate +".html");
+        ExtentSparkReporter reporter = new ExtentSparkReporter("./Reports/Test Automation Report" + currentDate +".html");
         reporter.config().setTheme(Theme.DARK);
-        reporter.config().setReportName("Rick and Morty Test Automation Report");
+        reporter.config().setReportName("Test Automation Report");
         extentReports.attachReporter(reporter);
         extentReports.setSystemInfo("Author", "Ekemini Udoh");
-
         extentReports.setSystemInfo("Platform", "Web App");
         return extentReports;
     }

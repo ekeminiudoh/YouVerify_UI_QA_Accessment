@@ -37,21 +37,6 @@ public class TestBase {
     public static String baseUrl = readTestData.setApplicationURL();
     public static WebDriver driver;
     public static JavascriptExecutor jsExecutor;
-    protected static final Logger logger = LogManager.getLogger(TestBase.class);
-    protected static ExtentReports extentReports;
-    protected static ExtentTest extentTest;
-
-//    @BeforeSuite
-//    public void setupExtentReports() {
-//        ExtentSparkReporter sparkReporter = new ExtentSparkReporter("reports/API_Test_Report.html");
-//        sparkReporter.config().setTheme(Theme.DARK);
-//        sparkReporter.config().setDocumentTitle("Fakerest API Test Report");
-//        sparkReporter.config().setReportName("API Automation Test Results");
-//        extentReports = new ExtentReports();
-//        extentReports.attachReporter(sparkReporter);
-//        extentReports.setSystemInfo("Tester", "Ekemini Udoh");
-//        extentReports.setSystemInfo("Project", "Fakerest API Automation");
-//    }
 
 
     // Method to capture a screenshot
@@ -69,7 +54,7 @@ public class TestBase {
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.setAcceptInsecureCerts(true);
-                chromeOptions.addArguments("--headless"); // Run in headless mode
+//                chromeOptions.addArguments("--headless"); // Run in headless mode
                 chromeOptions.addArguments("--no-sandbox"); // Required for some CI environments
                 chromeOptions.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
                 chromeOptions.addArguments("--disable-gpu");
@@ -92,8 +77,6 @@ public class TestBase {
         }
     }
 
-
-
     @BeforeClass
     public void setUp() {
         initializeWebDriver(browser);
@@ -110,9 +93,4 @@ public class TestBase {
             driver.quit();
         }
     }
-
-//    @AfterSuite
-//    public void tearDownExtentReports() {
-//        extentReports.flush();
-//    }
 }

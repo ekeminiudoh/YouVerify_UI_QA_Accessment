@@ -79,6 +79,6 @@ Functional Tests
     * Edit AutomationTest.xml to add new test classes or groups.
       
 # Test Reporting
-Test reports are generated with aventstack extentreport in the reports directory. 
+Test reports are generated with aventstack extent report in the reports directory. 
 # License
 This project is open-source 
