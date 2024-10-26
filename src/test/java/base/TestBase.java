@@ -54,7 +54,7 @@ public class TestBase {
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.setAcceptInsecureCerts(true);
-//                chromeOptions.addArguments("--headless"); // Run in headless mode
+                chromeOptions.addArguments("--headless"); // Run in headless mode
                 chromeOptions.addArguments("--no-sandbox"); // Required for some CI environments
                 chromeOptions.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
                 chromeOptions.addArguments("--disable-gpu");
